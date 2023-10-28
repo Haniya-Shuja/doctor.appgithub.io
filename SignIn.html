@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<style>
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
+
+/* Set a style for all buttons */
+button {
+padding: 14px 20px;
+margin: 8px 0;
+border: 1 px solid;
+border-radius: 10px;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+button:hover {
+opacity:1;
+}
+.clearfix1 button{
+width:300px;
+background-color: blue;
+color: white;
+
+
+}
+.clearfix2 button{
+width:300px;
+background-color:rgb(216, 212, 212);
+color: black;
+text-align: inherit;
+margin-left: 30px;
+
+
+
+}
+.clearfix3 button{
+width:300px;
+background-color: skyblue;
+color: white;
+margin-left: 30px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 14px 20px;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 16px;
+align-self: center;
+height: 600px;
+background-color: rgb(246, 246, 246);
+}
+
+.container1 {
+padding: 16px;
+align-self: center;
+}
+
+.overlap-box {
+position: absolute;
+top: 20px;
+left: 20px;
+background-color:white;
+/* Adjust the color and opacity as needed */
+/* padding: 10px;
+z-index: 2; /* Set the stacking order higher than the image (e.g., 1) */
+color: black;
+margin-left: 100px;
+height: 800px;
+width: 50%;
+margin-left: 10%;
+border: 3px solid rgba(255, 255, 255, 0.895);
+border-radius: 20px;
+padding: 30px;
+margin-top: 90px;
+
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.logo {
+margin-top: 24px;
+margin-left: 40px;
+width: 30px;
+height: 30px;
+}
+
+.text {
+font-size: 20px;
+font-weight: bold;
+color: #ff2b85;
+font-family: Arial, Helvetica, sans-serif
+}
+.space{
+width:2rem
+}
+
+#fff{
+    color: skyblue;
+}
+
+
+
+</style>
+<body>
+<header style="display: flex;">
+<form action="action_page.php" >
+  
+
+    <i class="fa-brands fa-facebook"></i>
+  <div class="container" align="center">
+    <div class="overlap-box">
+   <h1> Sign in with email</h1>
+
+
+    
+<div>
+   <label for="e-mail">Email address</label>
+
+<input type="text" id="doctorNameInput" placeholder="E-mail">
+</div>
+
+<input type="text" id="proficiencyInput" placeholder="Password">
+
+
+
+
+    <button class="facebook-login" onclick="loginWithFacebook()">Sign in with Facebook</button>
+<button class="google-login" onclick="loginWithGoogle()">Sign in with Google</button>
+
+
+<input type="text" id="doctorNameInput" placeholder="Search by doctor name">
+<input type="text" id="proficiencyInput" placeholder="Search by proficiency">
+<input type="text" id="specializationInput" placeholder="Search by specialization">
+
+
+    <!-- Add a button and link it to another HTML file -->
+    <a href="Search.html">
+      <button type="button">Search</button>
+    </a>
+  </div>
+
+  </div>
+</form>
+
+</body>
+</html>

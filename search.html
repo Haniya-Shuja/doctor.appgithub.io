@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="container" align="center">
+        <div class="overlap-box">
+    <div id="chat-container">
+        <!-- Chat interface goes here -->
+      </div>
+
+      <img src="./aap.jpg" alt="pic of doctor" width="100%" height="400px" >
+
+      <br>
+        <br>
+
+
+        <h1>Top rated Doctors</h1>
+
+        <div class="container" display="flex">
+
+            
+            <div class="box" style display="flex">
+              <div>
+                <a class=box1><img src="./pic1.jpg" alt="picture1"></a>
+        
+              </div>
+
+              <div>
+                <a class="box2"><img src="./pic3.jpg" alt="picture1"></a>
+              </div>
+                
+            <div>
+                <a class="box4"><img src="./pic2.jpg" alt="picture1"></a>
+              </div>
+              </div>
+            </div>
+            <br>
+      <input type="text" id="user-message" placeholder="Type your message">
+<button onclick="sendMessage()">Send</button>
+
+      
+<div id="booking-form">
+    <button type="button">Book an appointment</button>
+    <br>
+    <select id="doctor-list">
+      <!-- Populate with a list of available doctors -->
+    </select>
+    <input type="date" id="appointment-date">
+    <select id="time-slots">
+      <!-- Populate with available time slots for the selected date -->
+    </select>
+    <button onclick="bookAppointment()">Book Appointment</button>
+  </div>
+
+  <!-- Display the doctor's average rating -->
+<div class="doctor-rating">
+    Average Rating: 4.5 <!-- This should be dynamically generated from the database -->
+  </div>
+  
+  <!-- Display stars based on the average rating -->
+  <div class="rating-stars">
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+  </div>
+  
+
+  <script>
+    function sendMessage() {
+        const userMessage = document.getElementById("user-message").value;
+        // Process and send the user's message to the chatbot or live chat service.
+        // Receive and display responses in the chat interface.
+      }
+      function bookAppointment() {
+        const selectedDoctor = document.getElementById("doctor-list").value;
+        const selectedDate = document.getElementById("appointment-date").value;
+        const selectedTimeSlot = document.getElementById("time-slots").value;
+        // Send the selected details to the server for booking and confirmation.
+      }
+      
+      
+  </script>
+  </body>
+  </html>
+  
